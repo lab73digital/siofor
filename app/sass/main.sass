@@ -1,18 +1,31 @@
-@import "bourbon"
 @import "fonts"
 @import "libs"
 @import "vars"
 
-body
-    font-size: 0.8333333333333334vw
-    position: relative
-    line-height: normal
-    font-family: $f-regular
-    color: #fff
-    background-color: #000
-    background-repeat: no-repeat
-    background-position: center
-    padding: 0
+.siofor-instruction
+    @import "resetcss"
 
-@import "media"
-// Всегда в конце
+    margin: 3rem auto
+    padding-left: 15px
+    padding-right: 15px
+    width: 1000px
+    position: relative
+    font-family: $f-regular
+    font-size: $size-20px
+    color: $color-black
+    text-align: center
+    line-height: 0
+
+    h1
+        font-family: $f-bold
+        font-size: $size-28px
+    h3
+        font-family: $f-medium
+        font-size: $size-20px
+        color: $color-dark-brown
+    p
+        margin: 15px 0
+        font-size: $size-18px
+
+    @import "media"
+
