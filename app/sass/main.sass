@@ -7,8 +7,10 @@
 
     background-image: url("../img/BG_1.png")
     background-size: cover
+    //width: 90vw
+    //height: 100vh
     margin: 0 auto
-    padding: 50px 15px
+    padding: 50px 0 0 0
     max-width: 1000px
     position: relative
     font-family: $f-regular
@@ -16,6 +18,8 @@
     color: $color-black
     text-align: center
     line-height: 0
+
+
 
     h1
         font-family: $f-bold
@@ -32,6 +36,7 @@
         margin: 0 auto
 
     .siofor-instruction__first-block
+        height: 1240px
         p
             font-size: $size-18px
             font-family: $f-medium
@@ -247,7 +252,7 @@
                                                 border: 0.1rem solid $color-light-brown
                                                 top: 100%
                                                 transform: translateX(-50%)
-                                                overflow: visible
+                                                //overflow: visible
 
                                     h4
                                         font-family: $f-medium
@@ -255,13 +260,173 @@
                                         width: 200px
                                         transform: translate(-90%, 10%)
 
-        .b2
-            display: block
-            color: transparent
-            &:before
-                clear: both
+
+    .siofor-instruction__second-block
+        position: relative
+        padding: 3rem 0.5rem 3rem
+        height: 36.5rem
+        width: 100%
+        border-radius: 30px
+        background: url("../img/plashka_sostav_forma.png")
+        background-size: cover
+        overflow: hidden
+        .siofor-instruction__second-block_rect
+            width: 57rem
+            height: 21rem
+            position: absolute
+            border: 0.1rem solid $color-light-brown
+            top: 30%
+            left: 10%
+        .siofor-instruction__second-block_biton
+            width: 27rem
+            height: 14rem
+            background: url("../img/plashka_biton_3.png")
+            background-size: cover
+            border-radius: 20px
+            z-index: 1
+            text-align: left
+            padding: 20px
+            box-shadow: 0 0 15px grey
+            position: absolute
+            top: 23%
+            left: 5%
+            overflow: hidden
+            h5
+                font-family: $f-bold
+                font-size: $size-20px
+                color: $color-white
+                padding-bottom: 5px
+                sup
+                    font-size: 14px
+                    padding-left: 3px
+                    color: $color-white
+                    font-family: $f-light
+            p
+                color: $color-white
+                font-family: $f-light
+                font-size: $size-18px
+                margin: 0
+                padding: 4px 0 4px
+            .siofor-instruction__second-block_biton_500
+                position: absolute
+                display: block
+            .siofor-instruction__second-block_biton_850
+                position: absolute
+                //top: 0
+                display: none
+            .siofor-instruction__second-block_biton_1000
+                position: absolute
+                //top: 0
+                display: none
+        .siofor-instruction__second-block__button
+            position: absolute
+            top: 75%
+            left: 20%
+            color: $color-black
+            .siofor-instruction__second-block__button_left
+                padding: 2px 0 0 2px
+                background-color: #bfbfbf
+                height: 1.2rem
+                width: 1.2rem
+                border-radius: 5px
+                line-height: 15px
+                font-size: 20px
+                margin: 5px
+                cursor: pointer
+            .siofor-instruction__second-block__button_right
+                padding: 2px 2px 0 4px
+                background-color: #bfbfbf
+                height: 1.2rem
+                width: 1.2rem
+                border-radius: 5px
+                line-height: 15px
+                font-size: 20px
+                margin: 5px
+                cursor: pointer
+        .siofor-instruction__second-block_packs
+            //position: absolute
+            //display: inline-block
+            //top: 50%
+            //left: 55%
+            .siofor-instruction__second-block_packs-500
+                position: absolute
+                top: 60%
+                left: 35%
+                height: 8rem
+                width: 8rem
+                background-color: #ededed
+                border-radius: 15px
+                box-shadow: 0 0 20px #a3a3a3
+                z-index: 1
+                transition: all 700ms ease
+                cursor: pointer
+                //&:hover
+                    top: 60%
+                    left: 35%
+                    height: 8.3rem
+                    width: 8.3rem
+                    background-color: white
+                    z-index: 2
+            .siofor-instruction__second-block_packs-850
+                position: absolute
+                top: 60%
+                left: 57%
+                height: 8rem
+                width: 8rem
+                background-color: #ededed
+                border-radius: 15px
+                box-shadow: 0 0 20px #a3a3a3
+                z-index: 1
+                transition: all 700ms ease
+                cursor: pointer
+                //&:hover
+                    top: 60%
+                    left: 56%
+                    height: 8.3rem
+                    width: 8.3rem
+                    background-color: white
+                    z-index: 2
+            .siofor-instruction__second-block_packs-1000
+                position: absolute
+                top: 60%
+                left: 77%
+                height: 8rem
+                width: 8rem
+                background-color: #ededed
+                border-radius: 15px
+                box-shadow: 0 0 20px #a3a3a3
+                z-index: 1
+                transition: all 700ms ease
+                cursor: pointer
+                //&:hover
+                    top: 60%
+                    left: 75%
+                    height: 8.3rem
+                    width: 8.3rem
+                    background-color: white
+                    z-index: 2
+            .hovered-item-1000
+                top: 56%
+                left: 77.5%
+                height: 12rem
+                width: 12rem
+                background-color: white
+                z-index: 2
+            .hovered-item-850
+                top: 56%
+                left: 52.7%
+                height: 12rem
+                width: 12rem
+                background-color: white
+                z-index: 2
+            .hovered-item-500
+                top: 56%
+                left: 31%
+                height: 12rem
+                width: 12rem
+                background-color: white
+                z-index: 2
 
 
-
-    @import "media"
+@import "media"
 
