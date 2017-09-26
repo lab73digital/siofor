@@ -5,7 +5,7 @@
 .siofor-instruction
     @import "resetcss"
 
-    background-image: url("../img/BG_1.png")
+    background-image: url("../img/BG_2_bez fona_1.jpg")
     background-size: cover
     //width: 90vw
     //height: 100vh
@@ -34,7 +34,13 @@
         font-family: $f-regular
     .center-aligning
         margin: 0 auto
-
+    .second-background
+        position: absolute
+        height: 661px
+        width: 100%
+        background: url("../img/medyk_tovtyi.png")
+        background-size: cover
+        //background-repeat: no-repeat
     .siofor-instruction__first-block
         height: 1240px
         p
@@ -57,7 +63,7 @@
             font-size: $size-18px
             width: 26.5rem
             height: 3.1rem
-            background: url("../img/sugar.png")
+            background: url("../img/sakhrok.jpg")
             background-size: cover
             margin: 30px auto 0
             border-radius: 50px
@@ -272,13 +278,13 @@
         overflow: hidden
         .siofor-instruction__second-block_rect
             width: 57rem
-            height: 21rem
+            height: 22rem
             position: absolute
-            border: 0.1rem solid $color-light-brown
+            border: 0.15rem solid $color-light-brown
             top: 30%
             left: 10%
         .siofor-instruction__second-block_biton
-            width: 27rem
+            width: 35rem
             height: 14rem
             background: url("../img/plashka_biton_3.png")
             background-size: cover
@@ -304,9 +310,9 @@
             p
                 color: $color-white
                 font-family: $f-light
-                font-size: $size-18px
+                font-size: $size-20px
                 margin: 0
-                padding: 4px 0 4px
+                padding: 4px 10px 2px 0px
             .siofor-instruction__second-block_biton_500
                 position: absolute
                 display: none
@@ -320,29 +326,11 @@
                 display: none
         .siofor-instruction__second-block__button
             position: absolute
-            top: 75%
+            top: 78%
             left: 20%
-            color: $color-black
-            .siofor-instruction__second-block__button_left
-                padding: 2px 0 0 2px
-                background-color: #bfbfbf
-                height: 1.2rem
-                width: 1.2rem
-                border-radius: 5px
-                line-height: 15px
-                font-size: 20px
-                margin: 5px
-                cursor: pointer
+            cursor: pointer
             .siofor-instruction__second-block__button_right
-                padding: 2px 2px 0 4px
-                background-color: #bfbfbf
-                height: 1.2rem
-                width: 1.2rem
-                border-radius: 5px
-                line-height: 15px
-                font-size: 20px
-                margin: 5px
-                cursor: pointer
+                margin-left: 15px
         .siofor-instruction__second-block_packs
             //position: absolute
             //display: inline-block
@@ -350,29 +338,29 @@
             //left: 55%
             .siofor-instruction__second-block_packs-500
                 position: absolute
-                top: 63.5%
+                top: 57%
                 left: 40%
-                height: 8rem
-                width: 8rem
+                height: 10rem
+                width: 10rem
                 background-color: #ededed
                 border-radius: 15px
                 box-shadow: 0 0 20px #a3a3a3
                 z-index: 1
                 transition: all 700ms ease
                 cursor: pointer
-                //&:hover
-                    top: 63.5%
-                    left: 35%
-                    height: 8.3rem
-                    width: 8.3rem
-                    background-color: white
-                    z-index: 2
+            //&:hover
+                top: 57%
+                left: 35%
+                height: 8.3rem
+                width: 8.3rem
+                background-color: white
+                z-index: 2
             .siofor-instruction__second-block_packs-850
                 position: absolute
-                top: 63.5%
+                top: 57%
                 left: 60%
-                height: 8rem
-                width: 8rem
+                height: 10rem
+                width: 10rem
                 background-color: #ededed
                 border-radius: 15px
                 box-shadow: 0 0 20px #a3a3a3
@@ -380,7 +368,7 @@
                 transition: all 700ms ease
                 cursor: pointer
                 //&:hover
-                    top: 63.5%
+                    top: 57%
                     left: 56%
                     height: 8.3rem
                     width: 8.3rem
@@ -388,10 +376,10 @@
                     z-index: 2
             .siofor-instruction__second-block_packs-1000
                 position: absolute
-                top: 63.5%
+                top: 57%
                 left: 80%
-                height: 8rem
-                width: 8rem
+                height: 10rem
+                width: 10rem
                 background-color: #ededed
                 border-radius: 15px
                 box-shadow: 0 0 20px #a3a3a3
@@ -399,7 +387,7 @@
                 transition: all 700ms ease
                 cursor: pointer
                 //&:hover
-                    top: 63.5%
+                    top: 57%
                     left: 75%
                     height: 8.3rem
                     width: 8.3rem
@@ -410,25 +398,97 @@
                 //left: 77.5%
                 height: 12rem
                 width: 12rem
-                transform: translate(-2rem,-2rem)
+                transform: translate(-1rem)
                 background-color: white
                 z-index: 2
+                transition: all 500ms ease
             .hovered-item-850
                 //top: 56%
                 //left: 53%
                 height: 12rem
                 width: 12rem
-                transform: translate(-2rem,-2rem)
+                transform: translate(-1rem)
                 background-color: white
                 z-index: 2
+                transition: all 500ms ease
             .hovered-item-500
                 //top: 56%
                 //left: 31%
                 height: 12rem
                 width: 12rem
-                transform: translate(-2rem,-2rem)
+                transform: translate(-1rem)
                 background-color: white
                 z-index: 2
+                transition: all 500ms ease
+
+    .siofor-instruction__third-block
+        text-align: left
+        color: $color-black
+        .siofor-instruction__third-block__top
+            margin: 3rem 3rem 3rem
+        h3
+            font-family: $f-bold
+            font-size: $size-24px
+            color: $color-black
+            text-transform: uppercase
+            border-bottom: 2px solid $color-light-brown
+            width: 15rem
+            padding-bottom: 5px
+        h4
+            font-family: $f-medium
+            font-size: $size-18px
+            padding-top: 1rem
+            padding-bottom: 1rem
+        .siofor-instruction__third-block__row
+            display: block
+            margin-bottom: 1.5rem
+            width: 100%
+            //margin-left: 5%
+            //margin-right: 5%
+            p
+                font-family: $f-regular
+                font-size: $size-16px
+                margin: 0
+                q
+                    font-family: $f-bold
+            .siofor-instruction__third-block__column
+                //display: inline-block
+                float: left
+                max-width: 28%
+
+            .siofor-instruction__third-block__column-line
+                float: left
+                height: 60px
+                //padding: 1rem 0
+                width: 2px
+                background-color: $color-light-brown
+                margin: 0 1.5rem 0
+            &:after
+                content: ""
+                clear: both
+                display: table
+        .text-center
+            text-align: center
+            padding: 0 5rem 0
+            font-family: $f-light
+        .siofor-instruction__third-block__plashka
+            width: 980px
+            background-color: #f6f6f6
+            border-radius: 15px
+            overflow: hidden
+            margin: 0 10px 0
+            padding: 38px 38px 18px 38px
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2)
+            h3
+                font-family: $f-medium
+                font-size: $size-24px
+                border-bottom: none
+                .underline
+                    //content: "_"
+                    width: 1000px
+                    border-bottom: 2px solid $color-light-brown
+                    margin-left: 135px
+                    transform: translateY(-255%)
 
 
 @import "media"
