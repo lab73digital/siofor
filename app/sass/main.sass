@@ -18,6 +18,8 @@
     color: $color-black
     text-align: center
     line-height: 0
+    table
+        margin-bottom: 1rem
 
 
 
@@ -313,17 +315,11 @@
                 font-size: $size-20px
                 margin: 0
                 padding: 4px 10px 2px 0px
-            .siofor-instruction__second-block_biton_500
+            .siofor-instruction__second-block_biton-text
                 position: absolute
                 display: none
-            .siofor-instruction__second-block_biton_850
-                position: absolute
-                //top: 0
-                display: block
-            .siofor-instruction__second-block_biton_1000
-                position: absolute
-                //top: 0
-                display: none
+                &.active
+                    display: block
         .siofor-instruction__second-block__button
             position: absolute
             top: 78%
@@ -346,7 +342,7 @@
                 border-radius: 15px
                 box-shadow: 0 0 20px #a3a3a3
                 z-index: 1
-                transition: all 700ms ease
+                transition: all 500ms linear
                 cursor: pointer
             //&:hover
                 top: 57%
@@ -365,7 +361,7 @@
                 border-radius: 15px
                 box-shadow: 0 0 20px #a3a3a3
                 z-index: 1
-                transition: all 700ms ease
+                transition: all 500ms linear
                 cursor: pointer
                 //&:hover
                     top: 57%
@@ -384,7 +380,7 @@
                 border-radius: 15px
                 box-shadow: 0 0 20px #a3a3a3
                 z-index: 1
-                transition: all 700ms ease
+                transition: all 500ms linear
                 cursor: pointer
                 //&:hover
                     top: 57%
@@ -393,33 +389,13 @@
                     width: 8.3rem
                     background-color: white
                     z-index: 2
-            .hovered-item-1000
-                //top: 56%
-                //left: 77.5%
+            .hovered-item
                 height: 12rem
                 width: 12rem
-                transform: translate(-1rem)
+                transform: translate(-1rem, 0)
                 background-color: white
                 z-index: 2
-                transition: all 500ms ease
-            .hovered-item-850
-                //top: 56%
-                //left: 53%
-                height: 12rem
-                width: 12rem
-                transform: translate(-1rem)
-                background-color: white
-                z-index: 2
-                transition: all 500ms ease
-            .hovered-item-500
-                //top: 56%
-                //left: 31%
-                height: 12rem
-                width: 12rem
-                transform: translate(-1rem)
-                background-color: white
-                z-index: 2
-                transition: all 500ms ease
+                transition: all 500ms linear
 
     .siofor-instruction__third-block
         text-align: left
@@ -438,11 +414,19 @@
             font-family: $f-medium
             font-size: $size-18px
             padding-top: 1rem
-            padding-bottom: 1rem
+            padding-bottom: 2rem
         .siofor-instruction__third-block__row
-            display: block
-            margin-bottom: 1.5rem
+            //display: block
+            //margin-bottom: 2.5rem
             width: 100%
+            .siofor-instruction__third-block__row_table
+                th, td
+                    border-right: 2px solid $color-light-brown
+                    padding: 0 10px 0 30px
+                    vertical-align: top
+                    width: 33%
+                #last-td
+                    border-right: none
             //margin-left: 5%
             //margin-right: 5%
             p
@@ -472,7 +456,7 @@
             padding: 0 5rem 0
             font-family: $f-light
         .siofor-instruction__third-block__plashka
-            width: 980px
+            //width: 980px
             background-color: #f6f6f6
             border-radius: 15px
             overflow: hidden
@@ -484,11 +468,168 @@
                 font-size: $size-24px
                 border-bottom: none
                 .underline
-                    //content: "_"
                     width: 1000px
                     border-bottom: 2px solid $color-light-brown
-                    margin-left: 135px
-                    transform: translateY(-255%)
+                    //margin-left: 135px
+                    //transform: translateY(-255%)
+    .siofor-instruction__4-block
+        position: relative
+        height: 65rem
+        .siofor-instruction__4-block-left_hole
+            position: absolute
+            top: 6.2%
+            right: 7.5%
+            width: 220px
+            height: 56px
+            //background-color: yellow
+            z-index: 2
+            border-radius: 20px
+            cursor: pointer
+            //&:hover
+                background-color: #00b3ee
+        .siofor-instruction__4-block-right_hole
+            position: absolute
+            top: 6.2%
+            right: 68.5%
+            width: 220px
+            height: 56px
+            //background-color: yellow
+            z-index: 2
+            border-radius: 20px
+            cursor: pointer
+            //&:hover
+                background-color: #00b3ee
+        //opacity: 0
+        .siofor-instruction__4-block-heading
+            position: absolute
+            top: 0
+            left: 50%
+            transform: translateX(-50%)
+            margin-top: 4.5rem
+            h3
+                font-family: $f-bold
+                font-size: $size-24px
+                color: $color-black
+                border-bottom: 2px solid $color-light-brown
+        .siofor-instruction__4-block-left
+            top: 0
+            left: 4%
+            position: absolute
+            z-index: 1
+            background-image: url(../img/plashka_biton_4.png)
+            background-size: contain
+            background-repeat: no-repeat
+            width: 883px
+            height: 964px
+            //padding: 3rem 2rem
+            margin-top: 4rem
+            transition: all 400ms linear
+            p,h4,li
+                color: $color-white
+                font-size: $size-22px
+                text-align: left
+                padding-left: 70px
+                padding-right: 140px
+            ul, li
+                padding-right: 80px
+            h4
+                font-family: $f-bold
+                font-size: $size-24px
+                margin-bottom: 1rem
+                margin-top: 4rem
+            #h4-top
+                padding: 20px 0 80px 30px
+                margin-top: 0
+                &:before
+                    display: inline-block
+                    transform: translateY(-55%)
+                    content: ""
+                    margin-right: 5px
+                    width: 7px
+                    height: 7px
+                    background-color: $color-dark-brown
+                    border-radius: 50%
+            p
+                font-family: $f-regular
+            ul
+                li
+                    margin-left: 20px
+                    &:before
+                        display: inline-block
+                        transform: translateY(-70%)
+                        content: ""
+                        margin-right: 10px
+                        width: 5px
+                        height: 5px
+                        background-color: $color-dark-brown
+                        border-radius: 50%
+                #li-shorter
+                    padding-right: 350px
+        .siofor-instruction__4-block-right
+            top: 0
+            left: 10%
+            position: absolute
+            z-index: 0
+            background-image: url(../img/plashka_biton_51.png)
+            background-size: contain
+            background-repeat: no-repeat
+            width: 883px
+            height: 964px
+            //padding: 3rem 2rem
+            margin-top: 4rem
+            transition: all 400ms linear
+            cursor: pointer
+            p,h4,li
+                color: $color-white
+                font-size: $size-22px
+                text-align: left
+                padding-left: 70px
+                padding-right: 120px
+            ul, li
+                padding-right: 80px
+            h4
+                font-family: $f-bold
+                font-size: $size-24px
+                margin-bottom: 1rem
+                margin-top: 4rem
+            #h4-top
+                text-align: left
+                padding: 10px 0 80px 670px
+                margin-top: 0
+                line-height: 1
+                span
+                    font-family: $f-regular
+                    font-size: $size-18px
+                    color: $color-white
+                    padding: 0
+                &:after
+                    display: inline-block
+                    transform: translate(290%,-165%)
+                    content: ""
+                    //margin-right: 5px
+                    width: 7px
+                    height: 7px
+                    background-color: $color-dark-brown
+                    border-radius: 50%
+            p
+                font-family: $f-regular
+            ul
+                li
+                    margin-left: 20px
+                    &:before
+                        display: inline-block
+                        transform: translateY(-70%)
+                        content: ""
+                        margin-right: 10px
+                        width: 5px
+                        height: 5px
+                        background-color: $color-dark-brown
+                        border-radius: 50%
+                #li-shorter
+                    padding-right: 250px
+        .opacity-maker
+            opacity: 0.5
+            filter: grayscale(100%)
 
 
 @import "media"
