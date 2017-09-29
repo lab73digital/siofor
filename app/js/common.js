@@ -113,22 +113,46 @@ $(document).ready(function () {
         }
     });
 
-    $( ".siofor-instruction__4-block-left_hole, .siofor-instruction__4-block-right_hole" ).on('click', function () {
-        var hole1 = $(this).data('hole-toggler-1'), hole2 = $(this).data('hole-toggler-2');
-        if ($(".siofor-instruction__4-block-" + hole1).css("z-index","0")) {
-        $(".siofor-instruction__4-block-" + hole1).removeClass('opacity-maker').css("z-index","1").css("cursor","auto");
-        $(".siofor-instruction__4-block-" + hole2).css("z-index","0").css("cursor","pointer").addClass("opacity-maker");
-        }
+    // $( ".siofor-instruction__4-block-left_hole, .siofor-instruction__4-block-right_hole" ).on('click', function () {
+    //     var hole1 = $(this).data('hole-toggler-1'), hole2 = $(this).data('hole-toggler-2');
+    //     if ($(".siofor-instruction__4-block-" + hole1).css("z-index","0")) {
+    //     $(".siofor-instruction__4-block-" + hole1).removeClass('opacity-maker').css("z-index","1").css("cursor","auto");
+    //     $(".siofor-instruction__4-block-" + hole2).css("z-index","0").css("cursor","pointer").addClass("opacity-maker");
+    //     }
+    // });
+
+    // $( ".siofor-instruction__4-block-right, .siofor-instruction__4-block-left" ).on('click', function () {
+    //     var checker = $(this).data('biton-toggler');
+    //     if ($(this).css("z-index","0")) {
+    //     $(this).removeClass('opacity-maker');
+    //     $(this).css("z-index","1").css("cursor","auto");
+    //     $('.siofor-instruction__4-block-' + checker).css("z-index","0").css("cursor","pointer").addClass('opacity-maker');
+    //     }
+    // });
+    $('.siofor-instruction__4-block--click').on('click', function () {
+        $('.siofor-instruction__4-block--click').removeClass('active');
+        $(this).addClass('active');
+    });
+    $('.siofor-instruction__4-block-hole--click').on('click', function () {
+       var blockSide = $(this).data('hole-toggler');
+       $('.siofor-instruction__4-block--click').removeClass('active');
+       $('.siofor-instruction__4-block-' + blockSide).addClass('active');
     });
 
-    $( ".siofor-instruction__4-block-right, .siofor-instruction__4-block-left" ).on('click', function () {
-        var checker = $(this).data('biton-toggler');
-        if ($(this).css("z-index","0")) {
-        $(this).removeClass('opacity-maker');
-        $(this).css("z-index","1").css("cursor","auto");
-        $('.siofor-instruction__4-block-' + checker).css("z-index","0").css("cursor","pointer").addClass('opacity-maker');
-        }
+    $(".siofor-instruction__6-block_buttons--click").on('click', function () {
+        var toShow = $(this).data('slide-toggle-1');
+        var toHide = $(this).data('slide-toggle-2');
+        var toToggle = $(this).data('slide-toggle-3');
+        $(".siofor-instruction__6-block_buttons-" + toToggle).removeClass('fullheighted');
+        $(this).toggleClass('fullheighted');
+        $(".siofor-instruction__6-block_text-container_" + toHide).slideUp();
+        $(".siofor-instruction__6-block_text-container_" + toShow).slideToggle();
+
     });
+    // $(".siofor-instruction__6-block_buttons-right").on('click', function () {
+    //     $(".siofor-instruction__6-block_text-container_left-text").hide();
+    //     $(".siofor-instruction__6-block_text-container_right-text").slideToggle();
+    // });
 
 
     // $( ".siofor-instruction__4-block-left" ).on('click', function () {
