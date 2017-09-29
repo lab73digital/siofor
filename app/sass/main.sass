@@ -5,7 +5,7 @@
 .siofor-instruction
     @import "resetcss"
 
-    background-image: url("../img/BG_2_bez fona_1.jpg")
+    background-image: url("../img/BG_2_bez_fona_1.jpg")
     background-size: cover
     //width: 90vw
     //height: 100vh
@@ -42,6 +42,7 @@
         width: 100%
         background: url("../img/medyk_tovtyi.png")
         background-size: cover
+        filter: grayscale(100%)
         //background-repeat: no-repeat
     .siofor-instruction__first-block
         height: 1240px
@@ -265,8 +266,8 @@
                                     h4
                                         font-family: $f-medium
                                         font-size: $size-18px
-                                        width: 200px
-                                        transform: translate(-90%, 10%)
+                                        width: 230px
+                                        transform: translate(-86%, 10%)
 
 
     .siofor-instruction__second-block
@@ -322,9 +323,10 @@
                     display: block
         .siofor-instruction__second-block__button
             position: absolute
-            top: 78%
+            top: 80%
             left: 20%
-            cursor: pointer
+            //cursor: pointer
+            user-select: none
             .siofor-instruction__second-block__button_right
                 margin-left: 15px
         .siofor-instruction__second-block_packs
@@ -342,15 +344,15 @@
                 border-radius: 15px
                 box-shadow: 0 0 20px #a3a3a3
                 z-index: 1
-                transition: all 500ms linear
+                transition: all 500ms ease-in-out
                 cursor: pointer
-            //&:hover
-                top: 57%
-                left: 35%
-                height: 8.3rem
-                width: 8.3rem
-                background-color: white
-                z-index: 2
+                &:hover
+                    //top: 57%
+                    //left: 35%
+                    //height: 8.3rem
+                    //width: 8.3rem
+                    background-color: white
+                    //z-index: 2
             .siofor-instruction__second-block_packs-850
                 position: absolute
                 top: 57%
@@ -361,15 +363,15 @@
                 border-radius: 15px
                 box-shadow: 0 0 20px #a3a3a3
                 z-index: 1
-                transition: all 500ms linear
+                transition: all 500ms ease-in-out
                 cursor: pointer
-                //&:hover
-                    top: 57%
-                    left: 56%
-                    height: 8.3rem
-                    width: 8.3rem
+                &:hover
+                    //top: 57%
+                    //left: 56%
+                    //height: 8.3rem
+                    //width: 8.3rem
                     background-color: white
-                    z-index: 2
+                    //z-index: 2
             .siofor-instruction__second-block_packs-1000
                 position: absolute
                 top: 57%
@@ -380,22 +382,22 @@
                 border-radius: 15px
                 box-shadow: 0 0 20px #a3a3a3
                 z-index: 1
-                transition: all 500ms linear
+                transition: all 500ms ease-in-out
                 cursor: pointer
-                //&:hover
-                    top: 57%
-                    left: 75%
-                    height: 8.3rem
-                    width: 8.3rem
+                &:hover
+                    //top: 57%
+                    //left: 75%
+                    //height: 8.3rem
+                    //width: 8.3rem
                     background-color: white
-                    z-index: 2
+                    //z-index: 2
             .hovered-item
                 height: 12rem
                 width: 12rem
                 transform: translate(-1rem, 0)
                 background-color: white
                 z-index: 2
-                transition: all 500ms linear
+                transition: all 500ms ease-in-out
 
     .siofor-instruction__third-block
         text-align: left
@@ -420,13 +422,18 @@
             //margin-bottom: 2.5rem
             width: 100%
             .siofor-instruction__third-block__row_table
-                th, td
+                display: table
+                p
+                    display: table-cell
                     border-right: 2px solid $color-light-brown
-                    padding: 0 10px 0 30px
+                    padding: 0 20px 0 30px
                     vertical-align: top
                     width: 33%
                 #last-td
                     border-right: none
+                    padding-right: 0
+                #first-td
+                    padding-left: 0
             //margin-left: 5%
             //margin-right: 5%
             p
@@ -453,10 +460,10 @@
                 display: table
         .text-center
             text-align: center
-            padding: 0 5rem 0
+            padding: 1rem 3rem 0
             font-family: $f-light
         .siofor-instruction__third-block__plashka
-            width: 930px
+            width: 90%
             background-color: #f6f6f6
             border-radius: 25px
             overflow: hidden
@@ -470,6 +477,7 @@
                 .underline
                     width: 1000px
                     border-bottom: 2px solid $color-light-brown
+                    margin-top: 5px
                     //margin-left: 135px
                     //transform: translateY(-255%)
     .siofor-instruction__4-block
@@ -669,7 +677,7 @@
                 display: table
         .siofor-instruction__5-block_row-2
             display: block
-            width: 930px
+            width: 90%
             height: 400px
             background: url("../img/plashka_nyrka.jpg")
             background-size: cover
@@ -681,11 +689,11 @@
             .siofor-instruction__5-block_row-2_left
                 display: list-item
                 opacity: 0
-                width: 25%
+                width: 23%
                 float: left
             .siofor-instruction__5-block_row-2_right
                 display: block
-                width: 75%
+                width: 77%
                 float: left
                 text-align: left
                 padding: 0 90px 0 0
@@ -900,7 +908,7 @@
             &.fullheight
                 display: block
     .siofor-instruction__7-block
-        width: 1000px
+        width: 100%
         height: 857px
         background: url("../img/fon.jpg")
         background-size: cover
@@ -1023,17 +1031,25 @@
                                             right: 15%
     .siofor-instruction__8-block
         .siofor-instruction__8-block_row-1
+            display: block
+            margin: 0 auto
+            text-align: left
             h4
+                display: inline-block
                 font-size: $size-18px
                 font-family: $f-bold
-                width: 323px
+                //width: auto
                 text-align: left
                 padding-bottom: 0.5rem
-                margin: 3rem 0 3rem 4rem
+                margin: 3rem 0 3rem 5.3rem
                 border-bottom: 2px solid $color-light-brown
+        &:after
+            content: ""
+            clear: both
+            display: table
         .siofor-instruction__8-block_row-2
             display: block
-            width: 831px
+            width: 90%
             height: 197px
             background: url("../img/vagitna.jpg")
             background-size: cover
@@ -1064,7 +1080,7 @@
                 display: table
         .siofor-instruction__8-block_row-3
             display: block
-            width: 831px
+            width: 90%
             height: 313px
             background: url("../img/plashka_grudne_goruvannya.jpg")
             background-size: cover
@@ -1119,11 +1135,11 @@
                 margin-bottom: 1rem
     .siofor-instruction__8-block_row-5_line
         margin: 4rem 0
-        width: 1000px
+        width: 100%
         height: 3px
         background-color: $color-light-brown
     .siofor-instruction__8-block_row-6
-        width: 1000px
+        width: 100%
         height: 100px
         .siofor-instruction__8-block_row-6_container
             margin: 1rem auto
