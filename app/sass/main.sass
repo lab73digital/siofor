@@ -787,6 +787,7 @@
                     border-radius: 15px
                     background-color: #f6f6f6
                     cursor: pointer
+                    user-select: none
                     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2)
                     transition: all 400ms ease-in-out
                     z-index: 1
@@ -835,6 +836,7 @@
                     border-radius: 15px
                     background-color: #f6f6f6
                     cursor: pointer
+                    user-select: none
                     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2)
                     transition: all 400ms ease-in-out
                     h2
@@ -1019,6 +1021,146 @@
                                             background-color: $color-light-brown
                                             bottom: 100%
                                             right: 15%
+    .siofor-instruction__8-block
+        .siofor-instruction__8-block_row-1
+            h4
+                font-size: $size-18px
+                font-family: $f-bold
+                width: 323px
+                text-align: left
+                padding-bottom: 0.5rem
+                margin: 3rem 0 3rem 4rem
+                border-bottom: 2px solid $color-light-brown
+        .siofor-instruction__8-block_row-2
+            display: block
+            width: 831px
+            height: 197px
+            background: url("../img/vagitna.jpg")
+            background-size: cover
+            border-radius: 25px
+            //overflow: hidden
+            margin: 0 auto
+            //padding: 38px 38px 18px 38px
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2)
+            .siofor-instruction__8-block_row-2_left
+                display: block
+                width: 80%
+                float: left
+                text-align: left
+                padding: 0 90px 0 50px
+                transform: translateY(15%)
+                p
+                    margin: 0 0 2px 0
+                    &.first
+                        padding-bottom: 5px
+                h4
+                    font-family: $f-bold
+                    font-size: $size-18px
+                    color: $color-black
+                    margin-bottom: 1rem
+            &:after
+                content: ""
+                clear: both
+                display: table
+        .siofor-instruction__8-block_row-3
+            display: block
+            width: 831px
+            height: 313px
+            background: url("../img/plashka_grudne_goruvannya.jpg")
+            background-size: cover
+            border-radius: 25px
+            //overflow: hidden
+            margin: 3rem auto
+            //padding: 38px 38px 18px 38px
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2)
+            .siofor-instruction__8-block_row-3_right
+                display: block
+                width: 65%
+                float: right
+                text-align: right
+                padding: 0 50px 0 0
+                transform: translateY(15%)
+                p
+                    margin: 0 0 1rem 0
+                h4
+                    font-family: $f-bold
+                    font-size: $size-18px
+                    color: $color-black
+                    margin-bottom: 1rem
+            &:after
+                content: ""
+                clear: both
+                display: table
+        .siofor-instruction__8-block_row-4
+            margin: 3rem 0 3rem 10rem
+            text-align: left
+            padding: 0
+            transform: translateY(15%)
+            p
+                margin: 0 0 1rem 0
+                &.list
+                    line-height: 1
+                    margin: 0.5rem 0
+                    padding: 0
+                    &:before
+                        display: inline-block
+                        transform: translateY(-70%)
+                        content: ""
+                        margin-right: 10px
+                        width: 5px
+                        height: 5px
+                        background-color: $color-dark-brown
+                        border-radius: 50%
+
+            h4
+                font-family: $f-bold
+                font-size: $size-18px
+                color: $color-black
+                margin-bottom: 1rem
+    .siofor-instruction__8-block_row-5_line
+        margin: 4rem 0
+        width: 1000px
+        height: 3px
+        background-color: $color-light-brown
+    .siofor-instruction__8-block_row-6
+        width: 1000px
+        height: 100px
+        .siofor-instruction__8-block_row-6_container
+            margin: 1rem auto
+            background-color: #929292
+            border-radius: 50px
+            width: 390px
+            height: 50px
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2)
+            &:hover
+                background-color: #bbbbbb
+                transition: all 400ms ease-in-out
+            .siofor-instruction__8-block_row-6_container_button
+                width: 390px
+                cursor: pointer
+                .siofor-instruction__8-block_row-6_container_button_text
+                    width: 340px
+                    float: left
+                    font-family: $f-regular
+                    font-size: $size-20px
+                    line-height: 50px
+                    user-select: none
+                .siofor-instruction__8-block_row-6_container_button_pdf
+                    width: 50px
+                    height: 50px
+                    border-radius: 50%
+                    background-color: #555555
+                    color: $color-white
+                    float: right
+                    font-family: $f-light
+                    font-size: $size-18px
+                    line-height: 50px
+                    transition: all 400ms ease-in-out
+                    user-select: none
+                    &:hover
+                        background-color: #3d3d3d
+
+
 
 //&:after
     content: ""

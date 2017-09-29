@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6eb89de4-f2c5-4664-b736-ad8b9048f82f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/common.js" afterPath="$PROJECT_DIR$/app/js/common.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/scripts.min.js" afterPath="$PROJECT_DIR$/app/js/scripts.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/sass/main.sass" afterPath="$PROJECT_DIR$/app/sass/main.sass" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,8 +17,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="443" column="56" lean-forward="false" selection-start-line="443" selection-start-column="56" selection-end-line="443" selection-end-column="56" />
+            <state relative-caret-position="605">
+              <caret line="504" column="91" lean-forward="false" selection-start-line="504" selection-start-column="91" selection-end-line="504" selection-end-column="91" />
               <folding>
                 <element signature="n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -39,8 +36,8 @@
       <file leaf-file-name="main.sass" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/sass/main.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="915" column="55" lean-forward="false" selection-start-line="915" selection-start-column="55" selection-end-line="915" selection-end-column="55" />
+            <state relative-caret-position="327">
+              <caret line="789" column="37" lean-forward="false" selection-start-line="789" selection-start-column="37" selection-end-line="789" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -113,6 +110,7 @@
       <find>line</find>
       <find>siofor-instruction__4-block-left</find>
       <find>active</find>
+      <find>underline</find>
       <find>list</find>
     </findStrings>
   </component>
@@ -127,8 +125,8 @@
         <option value="$PROJECT_DIR$/app/sass/_vars.sass" />
         <option value="$PROJECT_DIR$/app/sass/_resetcss.sass" />
         <option value="$PROJECT_DIR$/app/sass/_media.sass" />
-        <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/js/common.js" />
+        <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/app/sass/main.sass" />
       </list>
     </option>
@@ -421,7 +419,7 @@
       <workItem from="1506324644068" duration="1325000" />
       <workItem from="1506345999669" duration="6434000" />
       <workItem from="1506367246527" duration="5764000" />
-      <workItem from="1506439282887" duration="59802000" />
+      <workItem from="1506439282887" duration="64860000" />
     </task>
     <task id="LOCAL-00001" summary="main fix">
       <created>1504189723580</created>
@@ -441,7 +439,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="144209000" />
+    <option name="totallyTimeSpent" value="149267000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -935,8 +933,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="443" column="56" lean-forward="false" selection-start-line="443" selection-start-column="56" selection-end-line="443" selection-end-column="56" />
+        <state relative-caret-position="605">
+          <caret line="504" column="91" lean-forward="false" selection-start-line="504" selection-start-column="91" selection-end-line="504" selection-end-column="91" />
           <folding>
             <element signature="n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -952,8 +950,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/sass/main.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="915" column="55" lean-forward="false" selection-start-line="915" selection-start-column="55" selection-end-line="915" selection-end-column="55" />
+        <state relative-caret-position="327">
+          <caret line="789" column="37" lean-forward="false" selection-start-line="789" selection-start-column="37" selection-end-line="789" selection-end-column="37" />
           <folding />
         </state>
       </provider>
