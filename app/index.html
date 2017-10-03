@@ -26,6 +26,7 @@
     <meta name="msapplication-navbutton-color" content="#000000">
     <!-- iOS Safari -->
     <meta name="apple-mobile-web-app-status-bar-style" content="#000000">
+
 </head>
 
 <body>
@@ -139,10 +140,10 @@
         </div>
         <div class="siofor-instruction__second-block__button">
                 <span class="siofor-instruction__second-block__button_left" id="button-left">
-                    <img src="img/siudy.png" width="24" height="24" alt="Предыдущая">
+                    <img src="img/siudy.png" alt="Предыдущая">
                 </span>
             <span class="siofor-instruction__second-block__button_right" id="button-right">
-                    <img src="img/tudy.png" width="24" height="24" alt="Следующая">
+                    <img src="img/tudy.png" alt="Следующая">
                 </span>
         </div>
         <div class="siofor-instruction__second-block_packs">
@@ -172,7 +173,7 @@
                                 <q>1.</q> Уменьшение выработки глюкозы в печени за счет угнетения глюконеогенеза и
                                 гликогенолиза
                             </p>
-                            <p>
+                            <p id="second-td">
                                 <q>2.</q> Повышение чувствительности мышц к инсулину, улучшение захвата глюкозы
                                 периферическими тканями
                                 и ее утилизации
@@ -258,9 +259,11 @@
         </div>
 
         <div class="siofor-instruction__4-block-right siofor-instruction__4-block--click" data-biton-toggler="left">
-            <h4 id="h4-top">
-                Для детей<br><span>старше 10 лет</span>
-            </h4>
+            <div class="h4-right">
+                <h4 id="h4-top">
+                    Для детей<br><span>старше 10 лет</span>
+                </h4>
+            </div>
             <p>Монотерапия и комбинированная терапия с инсулином:</p>
             <ul>
                 <li>Начальная доза 500-850 мг</li>
@@ -298,6 +301,7 @@
             </div>
             <div class="siofor-instruction__5-block_row-2_right">
                 <h4>Для пациентов с почечной недостаточностью</h4>
+                <div class="ugol-boder">
                 <p>Можно применять при умеренной почечной недостаточности,
                     стадия ІІІа (клиренс креатинина 45–59 мл/мин или скорость
                     клубочковой фильтрации (СКФ) 45–59 мл/мин/1,73 м2) только
@@ -308,8 +312,9 @@
                 <p class="list"> 1 раз в сутки</p>
                 <p class="list"> Максимальная доза 1000 мг/сутки и должна быть разделена
                     на 2 приема</p>
-                <p class="list"> Следует проводить тщательный мониторинг функции почек
-                    (каждые 3–6 мес)</p>
+                <p class="list"> Необходим тщательный мониторинг функции почек
+                    (раз в 3–6 месяцев)</p>
+                </div>
             </div>
             <div class="siofor-instruction__5-block_row-2_lines">
                 <div class="siofor-instruction__5-block_row-2_lines-1">
@@ -350,6 +355,8 @@
         <div class="siofor-instruction__6-block_text-container">
             <div class="siofor-instruction__6-block_text-container_left-text ">
                 <!--<div class="siofor-instruction__6-block_text-container_left-text_line"></div>-->
+                <div class="line-toggle-left"></div>
+                <div class="line-toggle-left-dot"></div>
                 <p>Повышенная чувствительность к действующему веществу
                     или другим компонентам препарата.</p>
 
@@ -363,10 +370,12 @@
                     например декомпенсированная сердечная недостаточность или
                     дыхательная недостаточность, недавно перенесенный инфаркт миокарда, шок.</p>
 
-                <p>Печеночная недостаточность, острая алкогольная интоксикация, алкоголизм.</p>
+                <p class="last-p">Печеночная недостаточность, острая алкогольная интоксикация, алкоголизм.</p>
 
             </div>
             <div class="siofor-instruction__6-block_text-container_right-text">
+                <div class="line-toggle-right"></div>
+                <div class="line-toggle-right-dot"></div>
                 <p><span>Со стороны нервной системы:</span> часто — нарушение вкуса.</p>
 
                 <p><span>Со стороны пищеварительной системы:</span> очень часто — тошнота, рвота, диарея, боль в животе,
@@ -391,7 +400,7 @@
 
                 <p><span>Дети и подростки:</span></p>
 
-                <p>Согласно опубликованным данным, опыту послерегистрационного применения и результатам контролируемых
+                <p class="last-p">Согласно опубликованным данным, опыту послерегистрационного применения и результатам контролируемых
                     клинических исследований, в ходе которых препарат в течение 1 года применяли у ограниченного
                     количества
                     детей и подростков в возрасте 10–16 лет, побочные действия у этой группы по характеру и степени
@@ -413,6 +422,8 @@
                 <p>Таблетки — не волшебные!
                     Придерживайтесь этих рекомендаций для лучшего результата
                 </p>
+                <div class="siofor-instruction__7-block_line-5">
+                </div>
                 <div class="siofor-instruction__7-block_line-1">
                     <div class="siofor-instruction__7-block_line-2">
                         <div class="siofor-instruction__7-block_plashka-2">
@@ -438,8 +449,7 @@
                                             с рекомендациями.</p>
                                             <p class="list">Назначать детям в возрасте 10–12 лет следует с особой
                                             осторожностью.</p>
-                                        <div class="siofor-instruction__7-block_line-5">
-                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -483,7 +493,7 @@
         </div>
         <div class="siofor-instruction__8-block_row-4">
                 <h4>Условия хранения</h4>
-                <p class="list"> Хранить при температуре не выше 30 ° С </p>
+                <p class="list"> Хранить при температуре не выше 30° С </p>
                 <p class="list"> Хранить в недоступном для детей месте</p>
                 <p class="list"> Срок годности — 3 года</p>
         </div>
@@ -502,5 +512,6 @@
 
 </div>
 <script src="js/scripts.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
 </body>
 </html>
