@@ -20,6 +20,11 @@
     line-height: 0
     table
         margin-bottom: 1rem
+    [class *= 'animation']
+        opacity: 0
+    //[class *= 'line']
+    //    opacity: 1
+    //    height: 0
 
 
 
@@ -206,7 +211,7 @@
                                                     top: 80%
                                                     transform: translateX(-70%)
                                                     width: 28rem
-                                                    height: 8.15rem
+                                                    height: 8.45rem
                                                     background: url("../img/plashka_biton_1.png")
                                                     border-radius: 15px
                                                     z-index: 1
@@ -288,7 +293,7 @@
             left: 10%
         .siofor-instruction__second-block_biton
             width: 35rem
-            height: 14rem
+            height: 14.5rem
             background: url("../img/plashka_biton_3.png")
             background-size: cover
             border-radius: 20px
@@ -315,7 +320,7 @@
                 font-family: $f-light
                 font-size: $size-20px
                 margin: 0
-                padding: 4px 10px 2px 0px
+                padding: 4px 10px 2px 0
             .siofor-instruction__second-block_biton-text
                 position: absolute
                 display: none
@@ -351,7 +356,7 @@
                 border-radius: 15px
                 box-shadow: 0 0 20px #a3a3a3
                 z-index: 1
-                transition: all 500ms ease-in-out
+                transition: all 500ms linear
                 cursor: pointer
                 &:hover
                     //top: 57%
@@ -370,7 +375,7 @@
                 border-radius: 15px
                 box-shadow: 0 0 20px #a3a3a3
                 z-index: 1
-                transition: all 500ms ease-in-out
+                transition: all 500ms linear
                 cursor: pointer
                 &:hover
                     //top: 57%
@@ -389,7 +394,7 @@
                 border-radius: 15px
                 box-shadow: 0 0 20px #a3a3a3
                 z-index: 1
-                transition: all 500ms ease-in-out
+                transition: all 500ms linear
                 cursor: pointer
                 &:hover
                     //top: 57%
@@ -404,7 +409,7 @@
                 transform: translate(-1rem, 0)
                 background-color: white
                 z-index: 2
-                transition: all 500ms ease-in-out
+                transition: all 500ms linear
 
     .siofor-instruction__third-block
         text-align: left
