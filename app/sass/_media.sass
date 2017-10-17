@@ -17,8 +17,9 @@
   .siofor-instruction
     @import "resetcss"
 
-    background-image: url("../img/BG_2_bez_fona_1.jpg")
-    background-size: cover
+    background-image: url("../img/BG_2_bez_fona_2.jpg")
+    background-size: contain
+    background-repeat: repeat
     //width: 90vw
     //height: 100vh
     margin: 0 auto
@@ -91,24 +92,24 @@
         .line1
           position: absolute
           height: 2.9rem
-          width: 0.1rem
+          width: 2px
           background-color: $color-light-brown
           top: 100%
           left: 50%
           transform: translateX(-50%)
           .line2
             position: absolute
-            height: 0.12rem
+            height: 2px
             width: 21.75rem
             background-color: inherit
             top: 100%
             transform: translateX(-50%)
             .line3-left
               top: 100%
-              transform: translateY(-0.1rem)
+              transform: translateY(-2px)
               position: absolute
               height: 3rem
-              width: 0.1rem
+              width: 2px
               background-color: inherit
               .line3-left__container
                 position: absolute
@@ -148,10 +149,10 @@
             .line3-right
               top: 100%
               left: 100%
-              transform: translate(-0.1rem, -0.1rem)
+              transform: translate(-2px, -2px)
               position: absolute
               height: 3rem
-              width: 0.1rem
+              width: 2px
               background-color: inherit
               .line3-right__container
                 position: absolute
@@ -183,13 +184,14 @@
                   transform: translateX(-50%)
                   position: absolute
                   height: 8.8rem
-                  width: 0.1rem
+                  width: 2px
                   background-color: $color-light-brown
                   .line5
                     top: 100%
-                    transform: translate(-100%, -100%)
+                    right: 0
+                    transform: translate(0, -100%)
                     position: absolute
-                    height: 0.1rem
+                    height: 2px
                     width: 5.85rem
                     background-color: inherit
                     .line5__circle
@@ -211,7 +213,7 @@
                         transform: translateX(-50%)
                         position: absolute
                         height: 8rem
-                        width: 0.1rem
+                        width: 2px
                         background-color: $color-light-brown
                         .line6__biton1
                           position: absolute
@@ -246,13 +248,13 @@
                             transform: translateX(-50%)
                             position: absolute
                             height: 12vw
-                            width: 0.1rem
+                            width: 2px
                             background-color: $color-light-brown
                             .line8
                               top: 100%
                               //transform: translate(-100%, -100%)
                               position: absolute
-                              height: 0.1rem
+                              height: 2px
                               width: 12vw
                               background-color: inherit
                               .line6__biton2
@@ -289,15 +291,16 @@
                                   transform: translateX(-50%)
                                   position: absolute
                                   height: 12vw
-                                  width: 0.1rem
+                                  width: 2px
                                   background-color: $color-light-brown
                                   z-index: -1
                                   .line10
-                                    bottom: 98%
-                                    transform: translate(-100%, -1%)
+                                    bottom: 100%
+                                    right: 100%
+                                    transform: translate(2px, 0)
                                     position: absolute
-                                    height: 0.1rem
-                                    width: 10.6vw
+                                    height: 2px
+                                    width: 10.9vw
                                     background-color: inherit
                                     z-index: -1
                     h4
@@ -316,6 +319,8 @@
       overflow: hidden
       h1
         margin-bottom: 1px
+      .animation_2-2
+        //font-size: 0.4vw
       .siofor-instruction__second-block_line-1
         position: absolute
         background-color: $color-light-brown
@@ -528,6 +533,7 @@
         text-align: center
         padding: 1rem 3rem 0
         font-family: $f-light
+        font-size: 1.6vw
       .siofor-instruction__third-block__plashka
         width: 90%
         background-color: #f6f6f6
@@ -536,6 +542,8 @@
         margin: 0 auto 0
         padding: 38px 38px 18px 38px
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.2)
+        p
+          font-size: 1.5vw
         h3
           font-family: $f-medium
           font-size: $size-24px
@@ -863,6 +871,7 @@
       display: block
       //height: 900px
       .siofor-instruction__6-block_buttons
+        margin-top: 4vw
         .siofor-instruction__6-block_buttons_container-left
           //display: block
           //float: left
@@ -1199,7 +1208,7 @@
           float: left
           text-align: left
           padding: 0 90px 0 50px
-          transform: translateY(15%)
+          transform: translateY(10%)
           p
             margin: 0 0 2px 0
             &.first
@@ -1253,9 +1262,10 @@
             line-height: 1
             margin: 0.5rem 0
             padding: 0
+            font-size: 1.4vw
             &:before
               display: inline-block
-              transform: translateY(-70%)
+              transform: translateY(-35%)
               content: ""
               margin-right: 10px
               width: 5px
@@ -1323,8 +1333,9 @@
   .siofor-instruction
     @import "resetcss"
 
-    background-image: url("../img/BG_2_bez_fona_1.jpg")
-    background-size: cover
+    background-image: url("../img/BG_2_bez_fona_2.jpg")
+    background-size: contain
+    background-repeat: repeat
     //width: 90vw
     //height: 100vh
     margin: 0 auto
@@ -1493,7 +1504,8 @@
                   background-color: $color-light-brown
                   .line5
                     top: 100%
-                    transform: translate(-100%, -100%)
+                    right: 0
+                    transform: translate(0, -100%)
                     position: absolute
                     height: 0.1rem
                     width: 12vw
@@ -1511,6 +1523,14 @@
                         transform: translate(-5%, 55%)
                         width: 30vw
                         height: auto
+                      &:after
+                        content: 'оптимальный препарат для начальной терапии СД II типа'
+                        position: absolute
+                        top: 50%
+                        font-family: $f-medium
+                        font-size: $size-18px
+                        width: 24vw
+                        left: 0
                       .line6
                         top: 100%
                         left: 50%
@@ -1597,8 +1617,9 @@
                                   background-color: $color-light-brown
                                   z-index: -1
                                   .line10
-                                    bottom: 98%
-                                    transform: translate(-100%, -1%)
+                                    bottom: 100%
+                                    right: 100%
+                                    transform: translate(0.12rem, 0)
                                     position: absolute
                                     height: 0.1rem
                                     width: 10.6vw
@@ -1607,7 +1628,7 @@
 
                     h4
                       font-family: $f-medium
-                      font-size: $size-18px
+                      font-size: 0
                       max-width: 150px
                       //right: 50%
                       transform: translate(-100%, 40%)
@@ -2626,8 +2647,9 @@
   .siofor-instruction
     @import "resetcss"
 
-    background-image: url("../img/BG_2_bez_fona_1.jpg")
-    background-size: cover
+    background-image: url("../img/BG_2_bez_fona_2.jpg")
+    background-size: contain
+    background-repeat: repeat
     //width: 90vw
     //height: 100vh
     margin: 0 auto
@@ -2700,24 +2722,25 @@
         .line1
           position: absolute
           height: 2.9rem
-          width: 0.1rem
+          width: 1px
           background-color: $color-light-brown
           top: 100%
           left: 50%
           transform: translateX(-50%)
           .line2
             position: absolute
-            height: 0.12rem
+            height: 1px
             width: 48vw
             background-color: inherit
             top: 100%
             transform: translateX(-50%)
             .line3-left
               top: 100%
-              transform: translateY(-0.1rem)
+              left: 0
+              transform: translate(-0.05rem,-0.05rem)
               position: absolute
               height: 3rem
-              width: 0.1rem
+              width: 1px
               background-color: inherit
               .line3-left__container
                 position: absolute
@@ -2757,10 +2780,10 @@
             .line3-right
               top: 100%
               left: 100%
-              transform: translate(-0.1rem, -0.1rem)
+              transform: translate(-0.1vw, 0)
               position: absolute
               height: 3rem
-              width: 0.1rem
+              width: 1px
               background-color: inherit
               .line3-right__container
                 position: absolute
@@ -2791,14 +2814,15 @@
                   left: 50%
                   transform: translateX(-50%)
                   position: absolute
-                  height: 20vw
-                  width: 0.1rem
+                  height: 18vw
+                  width: 1px
                   background-color: $color-light-brown
                   .line5
                     top: 100%
-                    transform: translate(-100%, -100%)
+                    right: 0
+                    transform: translate(-0.1vw, 0)
                     position: absolute
-                    height: 0.1rem
+                    height: 1px
                     width: 12vw
                     background-color: inherit
                     .line5__circle
@@ -2814,13 +2838,21 @@
                         transform: translate(-5%, 55%)
                         width: 30vw
                         height: auto
+                      &:after
+                        content: 'оптимальный препарат для начальной терапии СД II типа'
+                        position: absolute
+                        top: 50%
+                        font-family: $f-medium
+                        font-size: $size-18px
+                        width: 24vw
+                        left: 0
                       .line6
                         top: 100%
                         left: 50%
                         transform: translateX(-50%)
                         position: absolute
-                        height: 20vw
-                        width: 0.1rem
+                        height: 12vw
+                        width: 1px
                         background-color: $color-light-brown
                         .line6__biton1
                           position: absolute
@@ -2832,13 +2864,13 @@
                           border-radius: 15px
                           z-index: 1
                           text-align: left
-                          padding: 9px 0 0 30px
+                          padding: 7px 0 0 25px
                           box-shadow: 0 0 15px grey
                           h5
                             font-family: $f-bold
                             font-size: $size-20px
                             color: $color-white
-                            margin-left: -15px
+                            margin-left: -11px
                           ul
                             //padding-left: 15px
                             li
@@ -2850,17 +2882,17 @@
                                 font-size: $size-18px
                           .line7
                             top: 100%
-                            left: 5%
+                            left: 7%
                             transform: translateX(-50%)
                             position: absolute
                             height: 12vw
-                            width: 0.1rem
+                            width: 1px
                             background-color: $color-light-brown
                             .line8
                               top: 100%
                               //transform: translate(-100%, -100%)
                               position: absolute
-                              height: 0.1rem
+                              height: 1px
                               width: 12vw
                               background-color: inherit
                               .line6__biton2
@@ -2868,19 +2900,19 @@
                                 //top: 190%
                                 left: 100%
                                 transform: translateY(-50%)
-                                width: 57vw
+                                width: 58vw
                                 height: 13vw
                                 background: url("../img/plashka_biton_2.png")
-                                border-radius: 20px
+                                border-radius: 15px
                                 z-index: 1
                                 text-align: left
-                                padding: 9px 0 0 30px
+                                padding: 7px 0 0 25px
                                 box-shadow: 0 0 15px grey
                                 h5
                                   font-family: $f-bold
                                   font-size: $size-20px
                                   color: $color-white
-                                  margin-left: -15px
+                                  margin-left: -11px
                                 ul
                                   //padding-left: 15px
                                   li
@@ -2896,22 +2928,21 @@
                                   transform: translateX(-50%)
                                   position: absolute
                                   height: 12vw
-                                  width: 0.1rem
+                                  width: 1px
                                   background-color: $color-light-brown
                                   z-index: -1
                                   .line10
-                                    bottom: 98%
-                                    transform: translate(-100%, -1%)
+                                    transform: translate(0,0.07rem)
                                     position: absolute
-                                    height: 0.1rem
-                                    width: 10.6vw
+                                    height: 1px
+                                    width: 12.3vw
                                     background-color: inherit
                                     z-index: -1
 
                     h4
                       font-family: $f-medium
-                      font-size: $size-18px
-                      max-width: 95px
+                      font-size: 0px
+                      max-width: 96px
                       //right: 50%
                       transform: translate(-100%, 40%)
 
@@ -2929,22 +2960,22 @@
       .siofor-instruction__second-block_line-1
         position: absolute
         background-color: $color-light-brown
-        width: 90vw
-        height: 0.1rem
+        width: 88vw
+        height: 1px
         top: 28%
         right: 0
         .siofor-instruction__second-block_line-2
           position: absolute
           top: 0
           left: 0
-          width: 0.1rem
+          width: 1px
           height: 40.5vw
           background-color: inherit
           .siofor-instruction__second-block_line-3
             position: absolute
             background-color: inherit
             width: 90vw
-            height: 0.1rem
+            height: 1px
             bottom: 100%
             top: 100%
       //.siofor-instruction__second-block_rect
@@ -3684,7 +3715,7 @@
 
           .siofor-instruction__7-block_line-5
             position: absolute
-            width: 2px
+            width: 1px
             height: 49vw
             background-color: $color-light-brown
             bottom: 100%
@@ -3692,19 +3723,19 @@
             z-index: 0
           .siofor-instruction__7-block_line-1
             position: absolute
-            height: 2px
+            height: 1px
             width: 27vw
             background-color: $color-light-brown
             top: 25%
             right: 100%
             .siofor-instruction__7-block_line-2
               position: absolute
-              width: 2px
+              width: 1px
               height: 22vw
               background-color: $color-light-brown
               top: 100%
               right: 100%
-              transform: translateY(-2px)
+              transform: translateY(-1px)
               .siofor-instruction__7-block_plashka-2
                 position: absolute
                 width: 60vw
@@ -3740,19 +3771,19 @@
                     border-radius: 50%
                 .siofor-instruction__7-block_line-3
                   position: absolute
-                  width: 2px
+                  width: 1px
                   height: 25vw
                   background-color: $color-light-brown
                   top: 100%
                   right: 90%
                   .siofor-instruction__7-block_line-4
                     position: absolute
-                    height: 2px
+                    height: 1px
                     width: 15vw
                     background-color: $color-light-brown
                     top: 100%
                     left: 100%
-                    transform: translateY(-2px)
+                    transform: translateY(-1px)
                     .siofor-instruction__7-block_plashka-3
                       position: absolute
                       width: 60vw
